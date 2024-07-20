@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    background-color:#E9F1FA;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #00ABE4;
+    color: #66A5AD;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Reduced height */
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+nav .logo img {
+    display: block;
+    height: 40px; /* Adjusted logo size to fit better */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Ensure items are centered vertically */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Increased font size */
+    font-weight: 600; /* Made font bolder */
+    padding: 5px 10px; /* Added padding for better hover effect */
+    border-radius: 5px; /* Added border-radius for hover effect */
+    transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Dimmer background color on hover */
+    color: white; /* Ensures text color stays white */
+}
+
+h1 {
+    text-align: center;
+    color: #023047;
+    margin-top: 50px;
+}
+
+.register-title, .login-title, .dashboard-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #023047;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00ABE4; /* Changed hover color to #00ABE4 */
+}
+
+a.logout-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #023047;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.logout-link:hover {
+    color: #3A3B3C;
+}

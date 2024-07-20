@@ -1,0 +1,79 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="{% static 'css/logo.png' %}" alt="Logo" width="50" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'my-login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="register-title">Register now!</h1>
+
+    <form method="POST" class="register-form" autocomplete="off">
+        {% csrf_token %}
+        {{ registerform.as_p }}
+        <input type="submit" value="Register"/>
+    </form>
+</body>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="{% static 'css/logo.png' %}" alt="Logo" width="50" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'my-login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="register-title">Register now!</h1>
+
+    <form method="POST" class="register-form" autocomplete="off">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ registerform.username.id_for_label }}">Username:</label>
+            {{ registerform.username }}
+        </div>
+        <div class="form-group">
+            <label for="{{ registerform.email.id_for_label }}">Email address:</label>
+            {{ registerform.email }}
+        </div>
+        <div class="form-group">
+            <label for="{{ registerform.password1.id_for_label }}">Password:</label>
+            {{ registerform.password1 }}
+        </div>
+        <div class="form-group">
+            <label for="{{ registerform.password2.id_for_label }}">Confirm Password:</label>
+            {{ registerform.password2 }}
+        </div>
+        <input type="submit" value="Register"/>
+    </form>
+</body>
+</html>

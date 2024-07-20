@@ -1,0 +1,61 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"> <img src="{% static 'css/logo.png' %}" alt="Logo" width="50" height="50"></div>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">HOME</a></li>
+                <li><a href="{% url 'register' %}">SIGNUP</a></li>
+                <li><a href="{% url 'my-login' %}">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>FULL STACK PROJECT</h1>
+    <h3>This is the Home page.....
+       It Contains basic information about the project and its dependencies.
+       It is been developed on the python stack using Django..
+    </h3>
+   
+
+  
+</body>
+</html> -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+</head>
+<body>
+<nav>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="{% static 'css/logo.png' %}" alt="Logo" width="50" height="50">
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'my-login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Signup</a></li>
+            
+        </ul>
+    </div>
+</nav>
+<h1>FULL STACK PROJECT</h1>
+<h3>This is the Home page.....
+    It Contains basic information about the project and its dependencies.
+    It is been developed on the python stack using Django..
+</h3>
+</body>
+</html>

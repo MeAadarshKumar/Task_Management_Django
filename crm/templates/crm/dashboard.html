@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/dashboard.js' %}" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="{% static 'css/logo.png' %}" alt="Logo" width="50" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}" id="home-link">Home</a></li>
+                <li><a href="{% url 'user-logout' %}">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="dashboard-title">This is my dashboard.</h1>
+    
+
+ 
+</body>
+</html>
